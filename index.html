@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Boulder Creek Elementary — Chili Cook‑Off</title>
+  <style>
+    :root{
+      --accent:#d35400;
+      --muted:#666;
+      --bg:#fafafa;
+      --card:#fff;
+      --maxw:980px;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+    }
+    body{
+      margin:0;
+      background:linear-gradient(180deg,#fff,#f7f7f7);
+      color:#222;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    .wrap{max-width:var(--maxw);margin:28px auto;padding:20px;}
+    header{display:flex;align-items:center;gap:20px;padding:18px;border-radius:10px;background:var(--card);box-shadow:0 6px 18px rgba(0,0,0,0.06);}
+    .logo{width:88px;height:88px;background:linear-gradient(135deg,var(--accent),#e67e22);border-radius:10px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:20px}
+    h1{margin:0;font-size:22px}
+    .meta{color:var(--muted);font-size:14px;margin-top:6px}
+    .main{display:grid;grid-template-columns:1fr 360px;gap:20px;margin-top:18px;align-items:start}
+    .card{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.04)}
+    .hero{height:220px;border-radius:8px;background-image:linear-gradient(135deg,rgba(0,0,0,0.15),rgba(0,0,0,0.02)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=60');background-size:cover;background-position:center;margin-bottom:12px}
+    .lead{font-size:16px;line-height:1.45;color:#333}
+    .section-title{font-weight:700;margin-top:12px;margin-bottom:8px}
+    ul{padding-left:18px}
+    .sidebar .card + .card{margin-top:14px}
+    .btn{display:inline-block;background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:600}
+    .muted{color:var(--muted);font-size:14px}
+    form label{display:block;margin-top:10px;font-weight:600;font-size:13px}
+    input[type="text"],input[type="email"],select,textarea{width:100%;padding:10px;border-radius:6px;border:1px solid #ddd;margin-top:6px;box-sizing:border-box;font-size:14px}
+    textarea{min-height:90px;resize:vertical}
+    .flex{display:flex;gap:8px}
+    .small{font-size:13px;color:var(--muted)}
+    .prizes{display:flex;gap:10px;flex-wrap:wrap}
+    .prize{flex:1 1 110px;background:#fff8f3;border:1px solid #f3d4c2;padding:10px;border-radius:6px;text-align:center}
+    footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+    @media(max-width:920px){
+      .main{grid-template-columns:1fr; }
+      .sidebar{order:2}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">BCE</div>
+      <div>
+        <h1>Chili Cook‑Off & Family Night</h1>
+        <div class="meta">Saturday, November 15, 2025 · 5:00 PM – 8:00 PM · Boulder Creek Elementary</div>
+      </div>
+    </header>
+
+    <div class="main">
+      <div>
+        <div class="card">
+          <div class="hero" role="img" aria-label="Chili and community"></div>
+          <p class="lead">
+            Join us for the annual Boulder Creek Elementary Chili Cook‑Off! Bring family and friends for a warm night of competition, tasty chilis, kids' activities, raffle prizes, and community fun. All proceeds benefit the school PTA.
+          </p>
+
+          <div class="section">
+            <div class="section-title">Event Schedule</div>
+            <ul>
+              <li><strong>4:30 PM</strong> — Check‑in for Chili contestants</li>
+              <li><strong>5:00 PM</strong> — Doors open to families</li>
+              <li><strong>6:30 PM</strong> — Winners announced</li>
+              <li><strong>7:30 PM</strong> — Raffle and closing</li>
+            </ul>
+          </div>
+
+          <div class="section">
+            <div class="section-title">Who should come?</div>
+            <p class="small">Everyone! Families, neighbors, teachers, and anyone who loves chili. We’ll have a kids' corner with crafts and games.</p>
+          </div>
+
+          <div class="section">
+            <div class="section-title">Prizes</div>
+            <div class="prizes">
+              <div class="prize"><strong>1st Place</strong><div class="small">Trophy + Gift card</div></div>
+              <div class="prize"><strong>2nd Place</strong><div class="small">Gift bag</div></div>
+              <div class="prize"><strong>People's Choice</strong><div class="small">Special ribbon</div></div>
+            </div>
+          </div>
+
+          <div class="section" style="margin-top:12px">
+            <div class="section-title">Event FAQs</div>
+            <p class="small"><strong>Where:</strong> School cafeteria & gym. <strong>Parking:</strong> Lot and street parking.</p>
+            <p class="small"><strong>Questions?</strong> Contact the PTA at <a href="mailto:pta@bouldercreek.example">pta@bouldercreek.example</a></p>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <div class="section-title">Rules for Chili Contestants</div>
+          <ol>
+            <li>Register in advance and check in by 4:30 PM.</li>
+            <li>Bring at least 2 gallons of chili in a labeled, sealed container.</li>
+            <li>No commercial pre-packaged chili; home-made only.</li>
+            <li>Provide a short recipe card for ingredients (for allergy awareness).</li>
+          </ol>
+        </div>
+      </div>
+
+      <aside class="sidebar">
+        <div class="card">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <div class="muted">Admission</div>
+              <div style="font-weight:700;font-size:18px;margin-top:4px">$5 per person · Kids under 5 free</div>
+            </div>
+            <div style="text-align:right">
+              <div class="small">Nov 15 · 5–8 PM</div>
+            </div>
+          </div>
+
+          <hr style="border:none;border-top:1px solid #eee;margin:12px 0">
+
+          <div class="section-title">Register / Donate</div>
+
+          <!-- Registration form (client-side only) -->
+          <form id="reg-form" onsubmit="return handleLocalSubmit(event)">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" placeholder="Jane Doe" required>
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="jane@example.com" required>
+
+            <label for="attendees">Number of attendees</label>
+            <select id="attendees" name="attendees">
+              <option value="1">1 — $5</option>
+              <option value="2">2 — $10</option>
+              <option value="3">3 — $15</option>
+              <option value="4">4 — $20</option>
+              <option value="5">5 — $25</option>
+            </select>
+
+            <label for="donation">Optional donation (USD)</label>
+            <input id="donation" name="donation" type="text" placeholder="e.g. 10">
+
+            <div style="margin-top:10px">
+              <button class="btn" type="submit">Preview Order</button>
+            </div>
+
+            <div id="order-preview" style="margin-top:12px;font-size:14px;color:#333;display:none;border-radius:6px;padding:8px;background:#fffef7;border:1px solid #f3e0ce"></div>
+
+          </form>
+
+          <div style="margin-top:12px">
+            <div class="small">Pay / complete order</div>
+
+            <!-- PayPal script & buttons that you specified -->
+            <script src="https://www.paypalobjects.com/ncp/cart/cart.js" data-merchant-id="X6LSTQMQDUYDL"></script>
+
+            <paypal-cart-button data-id="pp-view-cart"></paypal-cart-button>
+            <script>
+              cartPaypal.Cart({ id: "pp-view-cart" })
+            </script>
+
+            <paypal-add-to-cart-button data-id="6HSHJUK2ABT6N"></paypal-add-to-cart-button>
+            <script>
+              cartPaypal.AddToCart({ id: "6HSHJUK2ABT6N" })
+            </script>
+
+            <paypal-add-to-cart-button data-id="PQ7SRFZHWNGD6"></paypal-add-to-cart-button>
+            <script>
+              cartPaypal.AddToCart({ id: "PQ7SRFZHWNGD6" })
+            </script>
+
+            <paypal-add-to-cart-button data-id="3F9Y4UWW83X4W"></paypal-add-to-cart-button>
+            <script>
+              cartPaypal.AddToCart({ id: "3F9Y4UWW83X4W" })
+            </script>
+
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <div class="section-title">Volunteer</div>
+          <p class="small">We need volunteers for setup, ticket table, and cleanup. <a href="mailto:volunteer@bouldercreek.example">Sign up</a></p>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <div class="section-title">Location</div>
+          <p class="small">Boulder Creek Elementary · 123 School Lane · Boulder</p>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      © Boulder Creek Elementary PTA · <span class="small">Event proceeds benefit school programs.</span>
+    </footer>
+  </div>
+
+  <script>
+    function handleLocalSubmit(e){
+      e.preventDefault();
+      var name = document.getElementById('name').value.trim();
+      var email = document.getElementById('email').value.trim();
+      var attendees = parseInt(document.getElementById('attendees').value,10) || 1;
+      var donation = parseFloat(document.getElementById('donation').value) || 0;
+      var pricePer = 5;
+      var subtotal = attendees * pricePer;
+      var total = subtotal + donation;
+      var preview = document.getElementById('order-preview');
+      preview.style.display = 'block';
+      preview.innerHTML = '<strong>Order preview</strong><div style="margin-top:6px">Name: ' + escapeHtml(name) +
+                          '<br>Email: ' + escapeHtml(email) +
+                          '<br>Attendees: ' + attendees + ' (\\$' + subtotal.toFixed(2) + ')' +
+                          (donation > 0 ? '<br>Donation: \\$' + donation.toFixed(2) : '') +
+                          '<br><strong>Total: \\$' + total.toFixed(2) + '</strong>' +
+                          '<div style="margin-top:10px"><em>Click the PayPal area below to complete payment.</em></div>';
+      return false;
+    }
+    function escapeHtml(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+  </script>
+</body>
+</html>

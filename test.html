@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chili Cook‑Off — Purchase Admission</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #d35400;
+      margin-bottom: 24px;
+    }
+    .item {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 16px;
+      margin-bottom: 16px;
+      border-radius: 6px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+    .item h3 {
+      margin: 0 0 8px 0;
+    }
+    .cart-button {
+      text-align: center;
+      margin-top: 32px;
+    }
+  </style>
+  <script src="https://www.paypalobjects.com/ncp/cart/cart.js" data-merchant-id="X6LSTQMQDUYDL"></script>
+</head>
+<body>
+
+  <h1>Chili Cook‑Off Admission</h1>
+     <div style="margin-top:12px">
+            <div class="small">Pay / complete order</div>
+
+            <paypal-cart-button data-id="pp-view-cart"></paypal-cart-button>
+            <script>
+              cartPaypal.Cart({ id: "pp-view-cart" })
+            </script>
+
+            <paypal-add-to-cart-button data-id="6HSHJUK2ABT6N"></paypal-add-to-cart-button>
+            <script>
+              cartPaypal.AddToCart({ id: "6HSHJUK2ABT6N" })
+            </script>
+
+            <paypal-add-to-cart-button data-id="PQ7SRFZHWNGD6"></paypal-add-to-cart-button>
+            <script>
+              cartPaypal.AddToCart({ id: "PQ7SRFZHWNGD6" })
+            </script>
+
+            <paypal-add-to-cart-button data-id="3F9Y4UWW83X4W"></paypal-add-to-cart-button>
+            <script>
+              cartPaypal.AddToCart({ id: "3F9Y4UWW83X4W" })
+            </script>
+      
+            <paypal-cart-button data-id="pp-view-cart"></paypal-cart-button>
+            <script>
+              cartPaypal.Cart({ id: "pp-view-cart" })
+            </script>
+
+          </div>
+        </div>
+
+  <script src="https://www.paypalobjects.com/ncp/cart/cart.js" data-merchant-id="X6LSTQMQDUYDL"></script>
+</body>
+</html>
